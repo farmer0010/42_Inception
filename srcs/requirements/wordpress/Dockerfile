@@ -10,7 +10,7 @@ RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli
 
 COPY conf/www.conf /etc/php/8.2/fpm/pool.d/www.conf
 
-COPY tools/setup_wordpress.sh /usr/local/bin
+COPY tools/setup_wordpress.sh /usr/local/bin/setup_wordpress.sh
 RUN chmod +x /usr/local/bin/setup_wordpress.sh
 
 ENTRYPOINT ["/usr/local/bin/setup_wordpress.sh"]

@@ -10,10 +10,10 @@ if [ ! -d "/var/lib/mysql/mysql" ]; then
 
     sleep 2
 
-    mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED BY '여기에_루트비밀번호';"
-    mysql -u root -e "CREATE DATABASE IF NOT EXISTS 여기에_DB이름;"
-    mysql -u root -e "CREATE USER IF NOT EXISTS '여기에_유저이름'@'%' IDENTIFIED BY '여기에_유저비밀번호';"
-    mysql -u root -e "GRANT ALL PRIVILEGES ON 여기에_DB이름.* TO '여기에_유저이름'@'%';"
+    mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED BY '$MYSQL_ROOT_PASSWORD';"
+    mysql -u root -e "CREATE DATABASE IF NOT EXISTS $MYSQL_DATABASE;"
+    mysql -u root -e "CREATE USER IF NOT EXISTS '$MYSQL_USER'@'%' IDENTIFIED BY '$MYSQL_PASSWORD';"
+    mysql -u root -e "GRANT ALL PRIVILEGES ON $MYSQL_DATABASE.* TO '$MYSQL_USER'@'%';"
     mysql -u root -e "FLUSH PRIVILEGES;"
 
     kill -s TERM "$pid"
