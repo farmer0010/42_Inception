@@ -25,4 +25,4 @@ This project aims to broaden knowledge of system administration by using Docker.
 - [Docker Official Documentation](https://docs.docker.com/)
 - [NGINX Official Documentation](https://nginx.org/en/docs/)
 - [Alpine Linux Wiki](https://wiki.alpinelinux.org/)
-- **AI Usage:** AI (LLM) was used primarily to assist with writing robust Dockerfiles for Alpine Linux, troubleshooting Docker network connection issues (e.g., WordPress to Redis), and formatting this documentation to meet the specific strict requirements of the 42 subject. All generated configurations were tested, reviewed, and fully understood prior to implementation.
+- **AI Usage:** AI (LLM) was utilized as an interactive study assistant to quickly find relevant official documentation (such as Alpine Linux package management and NGINX TLS setup), grasp complex Docker networking concepts, and format the markdown files. No code was directly generated or copy-pasted from AI; all Dockerfiles, scripts, and configurations were manually written, tested, and fully understood by the author.
