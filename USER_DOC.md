@@ -1,3 +1,5 @@
+*This project has been created as part of the 42 curriculum by juyoukim.*
+
 # User Documentation
 
 This guide explains how an end user or administrator can interact with the Inception infrastructure.

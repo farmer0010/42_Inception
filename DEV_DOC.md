@@ -1,3 +1,5 @@
+*This project has been created as part of the 42 curriculum by juyoukim.*
+
 # Developer Documentation
 
 This document explains the technical setup and maintenance of the Inception infrastructure.
